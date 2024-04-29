@@ -26,6 +26,6 @@ class TaquinGame {
     +jugabilidad() 
 }
 
-jueguito  <|--  TaquinGame
+jueguito  *-->  TaquinGame
 
 @enduml
