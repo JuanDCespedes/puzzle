@@ -27,5 +27,4 @@ class TaquinGame {
 }
 
 jueguito  *-->  TaquinGame
-a
 @enduml
