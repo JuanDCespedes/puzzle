@@ -1,0 +1,31 @@
+@startuml
+
+class jueguito {
+    -game: TaquinGame
+
+    +__init__()
+    +start()
+    +run_game()
+}
+
+class TaquinGame {
+    -size: tuple
+    -screen: Surface
+    -num_images: list
+    -image: Surface
+    -square_size: int
+    -padding: int
+    -board_state: list
+
+    +__init__()
+    +setup()
+    +shuffle_board()
+    +ganar(): bool
+    +draw()
+    +move_tile(empty_pos: int, target_pos: int)
+    +jugabilidad() 
+}
+
+jueguito  <|--  TaquinGame
+
+@enduml
